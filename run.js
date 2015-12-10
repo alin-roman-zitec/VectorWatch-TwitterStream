@@ -234,7 +234,7 @@ vectorStream.requestConfig = function(resolve) {
             'Display From': [
                 { name: 'My Last Tweet', value: 'LAST_TWEET' },
                 { name: 'My Profile', value: 'MY_PROFILE' },
-                { name: 'Top 1 Trends', value: 'TRENDS' }//,
+                { name: 'Top 3 Trends', value: 'TRENDS' }//,
                 //{ name: 'Notifications Today', value: 'NOTIFICATIONS' },
                 //{ name: 'Messages Today', value: 'MESSAGES' }
             ]
