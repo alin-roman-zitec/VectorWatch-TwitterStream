@@ -72,18 +72,18 @@ var getStreamDataForState = function(state, authTokens) {
     return getTwitterClientForState(state, authTokens).then(function(twitterClient) {
         if (from == 'LAST_TWEET') {
             return twitterApi.getCountsForMyLastTweet(twitterClient).then(function(counts) {
-                return 'R ' + counts.retweets + ', F ' + counts.favorites;
+                return '\ue035 ' + counts.retweets + ' \ue033 ' + counts.favorites;
             });
         } else if (from == 'MY_PROFILE') {
             return twitterApi.getMyFollowersCount(twitterClient).then(function(followers) {
-                return 'F ' + followers;
+                return '\ue027 ' + followers;
             });
         } else if (from == 'TRENDS') {
             return twitterApi.getTrendsForPlace(1, twitterClient).then(function(trends) {
-                return (trends || []).slice(0, 3).join('\n') || 'N/A';
+                return '\ue022 ' + (trends || []).slice(0, 3).join('\n\ue022 ') || 'N/A';
             });
         } else {
-            return 'N/A';
+            return '\ue032 N/A';
         }
     });
 };
