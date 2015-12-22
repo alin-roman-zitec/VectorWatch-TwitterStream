@@ -76,7 +76,7 @@ var getStreamDataForState = function(state, authTokens) {
             });
         } else if (from == 'MY_PROFILE') {
             return twitterApi.getMyFollowersCount(twitterClient).then(function(followers) {
-                return '\ue027 ' + followers;
+                return '\ue03a ' + followers;
             });
         } else if (from == 'TRENDS') {
             return twitterApi.getTrendsForPlace(1, twitterClient).then(function(trends) {
