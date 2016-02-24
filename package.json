@@ -5,8 +5,10 @@
   "main": "run.js",
   "dependencies": {
     "bluebird": "^2.10.2",
-    "stream-dev-tools": "git://github.com/alin-roman-zitec/streams-dev-tools.git",
-    "twitter": "^1.2.5"
+    "twitter": "^1.2.5",
+    "vectorwatch-authprovider-oauth1": "^1.0.0",
+    "vectorwatch-sdk": "^1.0.12",
+    "vectorwatch-storageprovider-mysql": "^1.0.4"
   },
   "devDependencies": {},
   "scripts": {
